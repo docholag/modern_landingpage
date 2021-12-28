@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./tailwind/output.css">
+</head>
+<body>
+<header>
+  <!--container-->
+  <div class="container mx-auto px-4">
+    <nav class="flex justify-between items-center py-5">
+      <!--logo-->
+      <div class="w-32 md:w-full z-20">
+        <img src="./img/logo.png" alt="">
+      </div>
+      <!--links-->
+      <ul id="menu" class="invisible z-20 fixed top-0 left-0 w-full h-screen flex flex-col justify-center items-center bg-gray-900 md:bg-transparent md:h-auto md:flex-row md:justify-between md:static md:visible">
+        <li class="m-12 md:0 "><a href="#" class="c-link">Home</a></li>
+        <li class="m-12 md:0 "><a href="#" class="c-link">Product</a></li>
+        <li class="m-12 md:0 "><a href="#" class="c-link">FAQ</a></li>
+        <li class="m-12 md:0 "><a href="#" class="c-link">Contact</a></li>
+      </ul>
+      
+      <!--menu button-->
+      <div id="menu-button" class="z-20 md:hidden cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div>
+    </nav>
+  </div>
+</header>
+<!--banner-->
+<section>
+  <div
+  class="w-full bg-no-repeat bg-cover relative h-custom" 
+  style="background-image: url('./img/banner.png')">
+
+    <!--translate để căn chỉnh content nằm giữa-->
+    <div class="
+    absolute
+    top-1/2
+    left-1/2
+    transform 
+    -translate-x-1/2 -translate-y-1/2 
+    z-10
+    text-white
+    text-center
+    ">
+      <!--tag-->
+      <p class="text-xl mb-5">Food app</p>
+      <!--tittle-->
+      <h1 class="text-4xl mb-5 font-bold max-w-2xl md:leading-relaxed md:text-5xl">Why stay hungry when you can order form Bella Onojie</h1>
+      <!--desc-->
+      <p class="text-xl mb-5 font-light">Download the bella onoje’s food app now on</p>
+      <!--button-->
+      <div class="flex justify-center">
+        <button class="mx-4 border border-transparent bg-red-500 px-10 py-3 rounded-full hover:bg-transparent hover:border-white transition-all">Playstore</button>
+        <button class="mx-4 border border-white bg-transparent px-10 py-3 rounded-full hover:bg-red-500 hover:border-transparent transition-all">Appstore</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--app image-->
+<section class="relative">
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-2/3 -translate-y-1/4">
+    <img src="./img/app-img.png" alt="" class="max-w-none w-screen pl-20 md:w-auto">
+  </div>
+</section>
+<!--app steps-->
+<section class="pt-96 mt-28 sm:pt-40-c md:mt-0">
+  <!--container-->
+  <div class="container mx-auto px-4">
+    <hr class="w-4/5 mx-auto h-0.5 bg-gray-200 md:w-2/5"> <!--line-->
+    <h2 class="text-center text-4xl font-semibold py-10">How the app works</h2>
+    <!--step 1-->
+    <div class="flex flex-col justify-evenly items-center py-10 md:flex-row">
+      <!--img-->
+      <div class="text-center mb-10">
+        <img src="./img/app-1.png" alt="">
+      </div>
+      <!--text-->
+      <div class="text-center md:text-left">
+        <!--tag-->
+        <span class="text-red-500 font-semibold">Create an account</span>
+        <!--tittle-->
+        <h2 class="text-4xl text-blue-900 font-bold max-w-md leading-relaxed py-5">Create/login to an existing account to get started</h2>
+        <!--desc-->
+        <p class="text-xl text-gray-500 font-light max-w-sm mx-auto md:mx-0">An account is created with your email and a desired password</p>
+      </div>
+    </div>
+    <!--step 2-->
+    <div class="flex flex-col justify-evenly items-center py-10 md:flex-row">
+      <!--img-->
+      <div class="text-center mb-10 order-1 md:order-2">
+        <img src="./img/app-2.png" alt="">
+      </div>
+      <!--text-->
+      <div class="text-center md:text-left order-2 md:order-1"> <!--oder dùng để đổi vị trí-->
+        <!--tag-->
+        <span class="text-red-500 font-semibold">Explore varieties</span>
+        <!--tittle-->
+        <h2 class="text-4xl text-blue-900 font-bold max-w-md leading-relaxed py-5">Shop for your favorites
+          meal as e dey hot.</h2>
+        <!--desc-->
+        <p class="text-xl text-gray-500 font-light max-w-sm mx-auto md:mx-0">Shop for your favorite meals or drinks
+          and enjoy while doing it.</p>
+      </div>
+    </div>
+    <!--step 3-->
+    <div class="flex flex-col justify-evenly items-center py-10 md:flex-row">
+      <!--img-->
+      <div class="text-center mb-10">
+        <img src="./img/app-3.png" alt="">
+      </div>
+      <!--text-->
+      <div class="text-center md:text-left">
+        <!--tag-->
+        <span class="text-red-500 font-semibold">Checkout</span>
+        <!--tittle-->
+        <h2 class="text-4xl text-blue-900 font-bold max-w-md leading-relaxed py-5">When you done check out
+          and get it delivered.</h2>
+        <!--desc-->
+        <p class="text-xl text-gray-500 font-light max-w-sm mx-auto md:mx-0">When you done check out and get it 
+          delivered with ease.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Download-->
+<section>
+  <!--background-->
+  <div style="background-image: url('./img/download.png')"
+  class="relative w-full h-custom bg-no-repeat bg-cover">
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
+      <!--tittle-->
+      <h1 class="text-4xl mb-5 font-bold max-w-2xl md:leading-relaxed md:text-5xl">Download the app now</h1>
+      <!--desc-->
+      <p class="text-xl mb-5 font-light">Availble on your favorite store. Start your premium experience now</p>
+      <!--button-->
+      <div class="flex justify-center">
+        <button class="mx-4 border border-transparent bg-red-500 px-10 py-3 rounded-full hover:bg-transparent hover:border-white transition-all">Playstore</button>
+        <button class="mx-4 border border-transparent bg-red-500 px-10 py-3 rounded-full hover:bg-transparent hover:border-white transition-all">Appstore</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--footer-->
+<section>
+  <!--container-->
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col justify-between items-center py-5 md:flex-row">
+      <!--logo-->
+    <div class="w-32 md:w-full">
+      <img src="./img/logo.png" alt="">
+    </div>
+    <!--contact-->
+    <div class="flex items-center mt-5 text-gray-500 w-full justify-center md:justify-end">
+      <!--phone-->
+      <a href="tel:03462691**" class="flex mx-4">
+        <!--icon-->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+        <!--number-->
+        <p>0987654321</p>
+      </a>
+      <!--email-->
+      <a href="mark42k9@gmail.com" class="flex mx-4">
+        <!--icon-->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+        <!--address-->
+        <p>maihieurose123@gmail.com</p>
+      </a>
+    </div>
+  </div>
+  <div>
+  </div>
+  <!--copy-->
+  <div class="text-center my-4">
+    <p class="text-gray-500">Copy &copy;2021 MhiuBaby</p>
+  </div>
+  </div>
+</section>
+
+<script src="./main.js"></script>
+</body>
+</html>
